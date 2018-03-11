@@ -252,39 +252,23 @@ sub {
   position: absolute; }
 
 .container .wrapper {
-  width: 67%;
-  max-width: 1400px;
-  margin: 0 auto; }
+  width: 73%;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center; }
 
-header {
-  padding: 32px 0;
+main h4.topic {
+  font: 400 20px "NexaBold";
+  color: #949494;
+  text-transform: uppercase; }
+main h2.fresh-vids {
+  font: 400 50px "NexaBold";
+  color: #0e68d6;
+  text-transform: capitalize; }
+main ul.latest-songs {
   display: flex;
-  justify-content: space-between; }
-  header h1 {
-    padding-right: 75px; }
-  header nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    header nav li {
-      list-style: none; }
-      header nav li a {
-        font: 400 18px "OpenSans";
-        color: #434343;
-        text-decoration: none;
-        text-transform: capitalize; }
-        header nav li a:hover {
-          font: 700 18px "OpenSans";
-          color: #ff5f3b; }
-      header nav li:last-child {
-        padding: 10px 15px;
-        font: 600 18px "OpenSans";
-        color: #5f2073;
-        border-radius: 4px;
-        background-color: rgba(243, 243, 243, 0.49); }
-
-main .banner {
-  background: url("../images/banner.png") no-repeat; }
+  justify-content: space-evenly;
+  list-style: none;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
