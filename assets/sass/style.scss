@@ -2,28 +2,268 @@
 @import '../common/_mixins.scss';
 @import '../common/_variables.scss';
 @import '../common/_common.scss';
+
 .container {
     .wrapper {
         width: 73%;
         max-width: 1500px;
         margin: 0 auto;
-        text-align: center;
+    }
+}
+
+header {
+    border-bottom: 5px solid $secondary-color;
+    margin-bottom: 18px;
+    background-color: $primary-color;
+    box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0);
+
+    .header-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1.logo {
+            text-align: center;
+
+            a {
+                img {
+                    max-width: 80px;
+                    max-height: 46px;
+                    height: auto;
+                    width: 100%;
+                    padding: 10px 0 5px 0;
+                }
+
+                p {
+                    padding-bottom: 10px;
+                    @include font-style(500, 11px, 'Futura', #fff);
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .search {
+            max-width: 587px;
+            width: 100%;
+            margin: 0 57px;
+            position: relative;
+            background-color:  $primary-color;
+            
+
+            input {
+                width: 100%;
+                padding: 10px 5px 5px 5px;
+                border: 0;
+                outline: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+                background-color: $primary-color;
+                @include font-style(500, 35px, 'Futura', #fff);
+
+                &::-webkit-input-placeholder {
+                    @include font-style(500, 35px, 'Futura', #fff);
+                }
+
+                &::placeholder {
+                    @include font-style(500, 35px, 'Futura', #fff);
+                }
+            }
+            
+            label {
+                position: absolute;
+                right: 0;
+                bottom: 10px;
+
+                img {
+                    max-width: 36px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .ham-burger {
+            padding: 15px 18px;
+            background-color: #0355b5;
+
+            a {
+                i {
+                    color: #fff;
+                }
+            }
+        }
     }
 }
 
 main {
-    h4.topic {
-        @include font-style(400, 20px, 'NexaBold', #949494);
-        text-transform: uppercase;
-    }
-    h2.fresh-vids {
-        @include font-style(400, 50px, 'NexaBold', #0e68d6);
-        text-transform: capitalize;
-    }
-    ul.latest-songs {
+    .latest-songs {
+        margin-bottom: 30px;
         display: flex;
         justify-content: space-evenly;
-        list-style: none;
-        position: relative;
+
+        .popular-song {
+            margin-right: 3px;
+            position: relative;
+
+            a {
+                text-decoration: none;
+
+                .snoop-doggy {
+                    img {
+                        width: 100%;
+                    }
+
+                    p {
+                        padding: 9px 102px 18px 16px;
+                        position: absolute;
+                        bottom: 0;
+                        background-color: $secondary-color; 
+                        @include font-style(500, 34px, 'Futura', #333);
+                        line-height: 38.42px;
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+
+		ul.latest-songs-list {
+			list-style: none;
+			
+			li {
+				position: relative;
+
+				&:first-child {
+					margin-bottom: 4px;
+				}
+
+				a {
+					text-decoration: none;
+
+					div {
+						img {
+							width: 100%;
+						}
+						p {
+							padding: 14px 23px 12px 15px;
+							position: absolute;
+							bottom: 0;
+							right: 15%;
+							background-color: $secondary-color; 
+							@include font-style(600, 17px, 'OpenSans', #333);
+							line-height: 19.21px;
+							text-transform: capitalize;
+						}
+					}
+				}
+			}
+		}
+    }
+
+	ul.songs-list {
+        display: flex;
+        flex-flow: row wrap;
+		list-style: none;
+
+		li {
+            width: 31%;
+            height: 310px;
+            border: 1px solid $secondary-color; 
+            margin: 0 20px 20px 0;
+            flex: 1 1 auto;
+            position: relative;
+
+            &:nth-child(3n) {
+                margin-right: 0; 
+            }
+
+			a {
+				text-decoration: none;
+
+				div.ome-grown {
+					img {
+						width: 100%;
+					}
+
+					div.song-description {
+                        position: absolute;
+                        bottom: 0px;
+                        right: 15%;
+
+						h5 {
+							padding: 5px 15px 7px 16px;
+							background-color:  #454545;
+							@include font-style(500, 15px, 'Futura', #fff);
+							text-transform: capitalize;
+						} 
+
+						p {
+							padding: 14px 23px 71px 14px;
+							background-color: $secondary-color; 
+							@include font-style(500, 17px, 'Futura', #666);
+							text-transform: capitalize;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.advertisement {
+        padding: 10px 0 30px 0;
+        max-width: 728px;
+        margin: 0 auto;
+
+        a {
+            img {
+                width: 100%;
+            }
+        }
+
+	}
+
+	ul.recommended-songs-list {
+		display: flex;
+		justify-content: space-evenly;
+
+		li {
+			a {
+				div {
+
+                }
+			}
+		}
+	}
+}
+
+
+/////////////////////Media Query////////////////////////
+
+@media(max-width: 1350px) {
+    main {
+        .latest-songs {
+            .popular-song {
+                a {
+                    .snoop-doggy {
+                        p {
+                            position: static;
+                        }
+                    }
+                }
+            }
+
+             ul.latest-songs-list {
+                 li {
+                     a {
+                         div {
+                             p {
+                                padding: 7px 23px 6px 15px;
+                                position: static;
+                             }
+                         }
+                     }
+                 }
+             }
+        }
+        
     }
 }

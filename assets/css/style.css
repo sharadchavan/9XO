@@ -254,21 +254,154 @@ sub {
 .container .wrapper {
   width: 73%;
   max-width: 1500px;
-  margin: 0 auto;
-  text-align: center; }
+  margin: 0 auto; }
 
-main h4.topic {
-  font: 400 20px "NexaBold";
-  color: #949494;
-  text-transform: uppercase; }
-main h2.fresh-vids {
-  font: 400 50px "NexaBold";
-  color: #0e68d6;
-  text-transform: capitalize; }
-main ul.latest-songs {
+header {
+  border-bottom: 5px solid #e8e8e8;
+  margin-bottom: 18px;
+  background-color: #0f69d6;
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0); }
+  header .header-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .header-details h1.logo {
+      text-align: center; }
+      header .header-details h1.logo a img {
+        max-width: 80px;
+        max-height: 46px;
+        height: auto;
+        width: 100%;
+        padding: 10px 0 5px 0; }
+      header .header-details h1.logo a p {
+        padding-bottom: 10px;
+        font: 500 11px "Futura";
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        white-space: nowrap; }
+    header .header-details .search {
+      max-width: 587px;
+      width: 100%;
+      margin: 0 57px;
+      position: relative;
+      background-color: #0f69d6; }
+      header .header-details .search input {
+        width: 100%;
+        padding: 10px 5px 5px 5px;
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+        background-color: #0f69d6;
+        font: 500 35px "Futura";
+        color: #fff; }
+        header .header-details .search input::-webkit-input-placeholder {
+          font: 500 35px "Futura";
+          color: #fff; }
+        header .header-details .search input::placeholder {
+          font: 500 35px "Futura";
+          color: #fff; }
+      header .header-details .search label {
+        position: absolute;
+        right: 0;
+        bottom: 10px; }
+        header .header-details .search label img {
+          max-width: 36px;
+          width: 100%; }
+    header .header-details .ham-burger {
+      padding: 15px 18px;
+      background-color: #0355b5; }
+      header .header-details .ham-burger a i {
+        color: #fff; }
+
+main .latest-songs {
+  margin-bottom: 30px;
   display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  position: relative; }
+  justify-content: space-evenly; }
+  main .latest-songs .popular-song {
+    margin-right: 3px;
+    position: relative; }
+    main .latest-songs .popular-song a {
+      text-decoration: none; }
+      main .latest-songs .popular-song a .snoop-doggy img {
+        width: 100%; }
+      main .latest-songs .popular-song a .snoop-doggy p {
+        padding: 9px 102px 18px 16px;
+        position: absolute;
+        bottom: 0;
+        background-color: #e8e8e8;
+        font: 500 34px "Futura";
+        color: #333;
+        line-height: 38.42px;
+        text-transform: capitalize; }
+  main .latest-songs ul.latest-songs-list {
+    list-style: none; }
+    main .latest-songs ul.latest-songs-list li {
+      position: relative; }
+      main .latest-songs ul.latest-songs-list li:first-child {
+        margin-bottom: 4px; }
+      main .latest-songs ul.latest-songs-list li a {
+        text-decoration: none; }
+        main .latest-songs ul.latest-songs-list li a div img {
+          width: 100%; }
+        main .latest-songs ul.latest-songs-list li a div p {
+          padding: 14px 23px 12px 15px;
+          position: absolute;
+          bottom: 0;
+          right: 15%;
+          background-color: #e8e8e8;
+          font: 600 17px "OpenSans";
+          color: #333;
+          line-height: 19.21px;
+          text-transform: capitalize; }
+main ul.songs-list {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none; }
+  main ul.songs-list li {
+    width: 31%;
+    height: 310px;
+    border: 1px solid #e8e8e8;
+    margin: 0 20px 20px 0;
+    flex: 1 1 auto;
+    position: relative; }
+    main ul.songs-list li:nth-child(3n) {
+      margin-right: 0; }
+    main ul.songs-list li a {
+      text-decoration: none; }
+      main ul.songs-list li a div.ome-grown img {
+        width: 100%; }
+      main ul.songs-list li a div.ome-grown div.song-description {
+        position: absolute;
+        bottom: 0px;
+        right: 15%; }
+        main ul.songs-list li a div.ome-grown div.song-description h5 {
+          padding: 5px 15px 7px 16px;
+          background-color: #454545;
+          font: 500 15px "Futura";
+          color: #fff;
+          text-transform: capitalize; }
+        main ul.songs-list li a div.ome-grown div.song-description p {
+          padding: 14px 23px 71px 14px;
+          background-color: #e8e8e8;
+          font: 500 17px "Futura";
+          color: #666;
+          text-transform: capitalize; }
+main .advertisement {
+  padding: 10px 0 30px 0;
+  max-width: 728px;
+  margin: 0 auto; }
+  main .advertisement a img {
+    width: 100%; }
+main ul.recommended-songs-list {
+  display: flex;
+  justify-content: space-evenly; }
+
+@media (max-width: 1350px) {
+  main .latest-songs .popular-song a .snoop-doggy p {
+    position: static; }
+  main .latest-songs ul.latest-songs-list li a div p {
+    padding: 7px 23px 6px 15px;
+    position: static; } }
 
 /*# sourceMappingURL=style.css.map */

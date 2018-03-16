@@ -19,7 +19,7 @@
     <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially.
        Remove comments from this tag, when you want to apply media queries to the website. -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
 
     <!-- To adhear no-cache for Chrome -->
     <!-- <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
@@ -31,6 +31,7 @@
 
     <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
     <link rel="stylesheet" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
     <!--[if lt IE 9]>
@@ -43,141 +44,199 @@
     <div class="container">
         <header>
             <div class="wrapper">
-                <h1 class="logo">
-                    <a href="#" title="9XO">
-                        <img src="assets/images/logo.png" alt="Logo" />
-                    </a>
-                </h1>
+                <div class="header-details">
+                    <h1 class="logo">
+                        <a href="#" title="9XO">
+                            <img src="assets/images/logo.png" alt="Logo" />
+                            <p>discover great music</p>
+                        </a>
+                    </h1>
+                    <div class="search">
+                        <input type="search" placeholder="Search" name="search" />
+                        <label><img src="assets/images/search.png" alt="search" /></label>
+                    </div>
+                    <div class="ham-burger">
+                        <a href="#" title="Hamburger">
+                            <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </header>
 
         <main>
             <div class="wrapper">
-                <h4 class="topic">topic</h4>
-                <h2 class="fresh-vids">fresh vids!</h2>
-                <ul class="latest-songs">
+                <div class="latest-songs">
+                    <div class="popular-song">
+                        <a href="#" title="Snoop Doggy">
+                            <div class="snoop-doggy">
+                                <img src="assets/images/snoop-doggy.png" alt="Snoop Doggy" />
+                                <p>the snoop dogg-y spoof of president obama that's too good not to see</p>
+                            </div>
+                        </a>
+                    </div>
+                    <ul class="latest-songs-list">
+                        <li>
+                            <a href="#" title="She is Beautiful">
+                                <div class="she-is-beautiful">
+                                    <img src="assets/images/she-is-beautiful.png" alt="She is Beautiful" />
+                                    <p>she is already beautiful in the beginning. she ends as a reason why we want to toxic
+                                        beauty ideas
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Sweet Little Girl">
+                                <div class="sweet-little-girl">
+                                    <img src="assets/images/sweet-little-girl.png" alt="Sweet Little Girl" />
+                                    <p>a sweet little girl reads a sweet story about her two dads met and created a family</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="songs-list">
                     <li>
                         <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Fresh Vids">
-                            <img src="assets/images/fresh-vids.png" alt="Fresh Vids" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Shoes">
-                            <img src="assets/images/shoes.png" alt="Shoes" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Fresh Vids">
-                            <img src="assets/images/fresh-vids.png" alt="Fresh Vids" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Shoes">
-                            <img src="assets/images/shoes.png" alt="Shoes" />
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Fresh Vids">
-                            <img src="assets/images/fresh-vids.png" alt="Fresh Vids" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Shoes">
-                            <img src="assets/images/shoes.png" alt="Shoes" />
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Fresh Vids">
-                            <img src="assets/images/fresh-vids.png" alt="Fresh Vids" />
-                        </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
-                    </li>
-                    <li>
-                        <a href="#" title="Shoes">
-                            <img src="assets/images/shoes.png" alt="Shoes" />
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
                         </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
                     </li>
                     <li>
                         <a href="#" title="Ome Grown">
-                            <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
                         </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
                     </li>
                     <li>
-                        <a href="#" title="Fresh Vids">
-                            <img src="assets/images/fresh-vids.png" alt="Fresh Vids" />
+                        <a href="#" title="Ome Grown">
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
                         </a>
-                        <h6>OmeGrown</h6>
-                        <p>foster the people's first git was a chaotic LSD-fuelled nightmare</p>
                     </li>
-
-
+                    <li>
+                        <a href="#" title="Ome Grown">
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Ome Grown">
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Ome Grown">
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
-
+                <div class="advertisement">
+                    <a href="#" title="Advertisement">
+                        <img src="assets/images/advertisment.png" alt="Advertisement" />
+                    </a>
+                </div>
+                <ul class="songs-list">
+                    <li>
+                        <a href="#" title="Ome Grown">
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Ome Grown">
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="Ome Grown">
+                            <div class="ome-grown">
+                                <img src="assets/images/ome-grown.png" alt="Ome Grown" />
+                                <div class="song-description">
+                                    <h5>fresh vids</h5>
+                                    <p>faster the people's first git was a chaotic LSD-fuelled nightmare</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </main>
         <footer></footer>
