@@ -403,5 +403,49 @@ main ul.recommended-songs-list {
   main .latest-songs ul.latest-songs-list li a div p {
     padding: 7px 23px 6px 15px;
     position: static; } }
+@media (max-width: 1150px) {
+  main .latest-songs {
+    display: block; }
+    main .latest-songs .popular-song {
+      margin: 0 0 3px 0; }
+    main .latest-songs ul.latest-songs-list {
+      display: flex;
+      justify-content: space-between; }
+      main .latest-songs ul.latest-songs-list li:first-child {
+        margin: 0 4px 0 0; }
+      main .latest-songs ul.latest-songs-list li a div p {
+        max-height: 60px;
+        min-height: 60px;
+        height: auto;
+        overflow: hidden; } }
+@media (max-width: 1024px) {
+  main ul.songs-list li {
+    width: 35%;
+    margin: 0; }
+    main ul.songs-list li:nth-child(odd) {
+      margin: 0 20px 20px 0; }
+    main ul.songs-list li:last-child {
+      width: 49%;
+      flex: inherit; } }
+@media (max-width: 768px) {
+  main .latest-songs ul.latest-songs-list {
+    display: block; }
+    main .latest-songs ul.latest-songs-list li:first-child {
+      margin: 0 0 4px 0; }
+  main ul.songs-list li {
+    height: 210px; }
+    main ul.songs-list li a div.ome-grown div.song-description p {
+      padding-bottom: 14px; } }
+@media (max-width: 585px) {
+  main ul.songs-list {
+    display: block; }
+    main ul.songs-list li {
+      width: 100%;
+      height: 310px;
+      margin-bottom: 20px; }
+      main ul.songs-list li:last-child {
+        width: 100%; }
+      main ul.songs-list li a div.ome-grown div.song-description p {
+        padding-bottom: 71px; } }
 
 /*# sourceMappingURL=style.css.map */
